@@ -5,12 +5,20 @@
 * Значение цвета всегда указывается в HEX-формате в нижнем регистре (кроме исключительных случаев).
 */
 // Пример указания цветов
-$outer-space: #202f2f;
+// $outer-space: #202f2f;
 $bunker: #121920;
 $white: #ffffff;
+$slate-gray: #768298;
+$curious-blue: #34AADD;
+$cerise-red: #DC2C53;
+$tapestry: #A7507B;
+$heather: #BBC4D6;
 
+$color-text: $bunker;
+$color-text-light: $heather;
 
-$color-text: $outer-space;
+$color-background: $white;
+
 
 
 
@@ -19,21 +27,42 @@ $color-text: $outer-space;
 */
 $font-size-base: 16px;
 
+$font-weight-bold: 700;
+$font-weight-medium: 500px;
+$font-weight-regular: 400;
+
+$font-size-huge: 30px;
+$font-size-large: 24px;
+$font-size-medium: 18px;
+$font-size-normal: 16px;
+$font-size-small: 14px;
+
+$line-height-default: 1.7;
+$line-height-normal: 1.4;
+$line-height-medium: 1.3;
+$line-height-small: 1.2;
+
 
 
 /**
 * Breakpoints
 */
 // Пример указания медиазапросов, затем можно использовать ее как '@media #{$screen-medium} {...}'
-$screen-medium: '(min-width: 768px)';
-
-
+$screen-big: "(min-width: 1440px)";
+$screen-medium: "(min-width: 768px)";
+$screen-mobile-only: "(max-width: 767px)"; //375 в макете
 
 /**
 * Layout
 */
 
+$window-width-tablet: 768px;
+$window-width-mobile: 375px;
 
+$container-width-tablet: 728px;
+$container-horizontal-padding: 20px;
+
+$input-height: 50px;
 
 /**
 * Sizes

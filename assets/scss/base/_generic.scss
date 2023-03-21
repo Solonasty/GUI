@@ -22,20 +22,20 @@ body {
 
     font-size: rem($font-size);
     font-weight: $font-weight-medium;
-    line-height: ($line-height-medium / $font-size);
+    // line-height: ($line-height-medium / $font-size);
 
-    text-rendering: optimizeLegibility;
+    // text-rendering: optimizeLegibility;
 }
 
-h3 {
-    // @include text-large;
+// h3 {
+//     @include text-large;
 
-    // margin-top: 0;
-    // margin-bottom: 0;
+//     margin-top: 0;
+//     margin-bottom: 0;
 
-    // &:not([class]) {
-    //     margin-bottom: rem(10px);
+//     &:not([class]) {
+//         margin-bottom: rem(10px);
 
-    //     @include resetting-vertical-indentation-of-last;
-    // }
-}
+//         @include resetting-vertical-indentation-of-last;
+//     }
+// }
