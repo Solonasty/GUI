@@ -3,6 +3,7 @@
 */
 // Пример подключения плагинов
 // @import "~plugin-name.scss";
+@import "~normalize.css";
 
 
 /**
@@ -27,3 +28,5 @@
 */
 //  Пример подключения стилей блоков
 // @import "components/my-block";
+
+@import "blocks/block";

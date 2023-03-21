@@ -8,7 +8,7 @@
     }
   
     @return $pixels / $context * 1rem;
-}
+} //html используется всегда!
   
 @function em($pixels, $context: $font-size-base) {
     @if (unitless($pixels)) {
@@ -20,4 +20,4 @@
     }
 
     @return $pixels / $context * 1em;
-}
+} //относительно унаследованного
