@@ -8,7 +8,7 @@
     }
   
     @return $pixels / $context * 1rem;
-}
+} //html
   
 @function em($pixels, $context: $font-size-base) {
     @if (unitless($pixels)) {
