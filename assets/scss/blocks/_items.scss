@@ -1,0 +1,26 @@
+.items {
+    display: flex;
+    flex-direction: column;
+
+    @media #{$screen-tablet} {
+        flex-direction: row;
+        gap: $gap-items;
+    }
+
+    &__sidebar {
+        background-color: green;
+
+        @media #{$screen-tablet} {
+            width: $width-sidebar;
+        }
+    }
+
+    &__main {
+        background-color: yellow;
+
+        @media #{$screen-tablet} {
+            flex: auto;
+        }
+    }
+
+}
