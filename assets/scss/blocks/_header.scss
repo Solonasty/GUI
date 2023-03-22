@@ -1,0 +1,9 @@
+.header {
+    height: rem($height-header-mobile);
+
+    background-color: blue;
+
+    @media #{$screen-tablet} {
+        height: rem($height-header-desktop);
+    }
+}
