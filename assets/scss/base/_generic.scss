@@ -18,24 +18,83 @@ html {
 }
 
 body {
-    // $font-size: $font-size-base;
+    $font-size: $font-size-base;
 
-    // font-size: rem($font-size);
-    font-weight: $font-weight-medium;
-    // line-height: ($line-height-medium / $font-size);
+    font-weight: $font-weight-regular;
 
     text-rendering: optimizeLegibility;
 }
 
-// h3 {
-//     @include text-large;
+h1 {
+    @include text-huge;
 
-//     margin-top: 0;
-//     margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 
-//     &:not([class]) {
-//         margin-bottom: rem(10px);
+    &:not([class]) {
+        margin-bottom: rem(10px);
+        // @include resetting-vertical-indentation-of-last;
+    }
+}
 
-//         @include resetting-vertical-indentation-of-last;
-//     }
+h2 {
+    @include text-large;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &:not([class]) {
+        margin-bottom: rem(10px);
+        // @include resetting-vertical-indentation-of-last;
+    }
+}
+
+h3 {
+    @include text-medium;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &:not([class]) {
+        margin-bottom: rem(10px);
+        // @include resetting-vertical-indentation-of-last;
+    }
+}
+
+p {
+    @include text-small;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &:not([class]) {
+        margin-bottom: rem(10px);
+        // @include resetting-vertical-indentation-of-last;
+    }
+}
+
+// ol {
+//     @include ol;
 // }
+ol {
+    list-style-type: none;
+    counter-reset: item;
+    // margin: 0;
+    // padding: 0;
+  }
+  
+  ol > li {
+    // display: table;
+    counter-increment: item;
+
+  }
+  
+  ol > li:before {
+    content: counters(item, ".") ". ";
+  
+  }
+  
+  
+  li ol > li:before {
+    content: counters(item, ".") " ";
+  }  
