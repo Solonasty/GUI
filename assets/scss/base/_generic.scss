@@ -39,9 +39,7 @@ h1 {
 
 h2 {
     @include text-large;
-
-    margin-top: 0;
-    margin-bottom: 0;
+    @include removeTopBottomMargin;
 
     &:not([class]) {
         margin-bottom: rem(10px);
@@ -51,9 +49,7 @@ h2 {
 
 h3 {
     @include text-medium;
-
-    margin-top: 0;
-    margin-bottom: 0;
+    @include removeTopBottomMargin;
 
     &:not([class]) {
         margin-bottom: rem(10px);
@@ -63,9 +59,7 @@ h3 {
 
 p {
     @include text-small;
-
-    margin-top: 0;
-    margin-bottom: 0;
+    @include removeTopBottomMargin;
 
     &:not([class]) {
         margin-bottom: rem(10px);
@@ -73,28 +67,32 @@ p {
     }
 }
 
-// ol {
-//     @include ol;
-// }
-ol {
-    list-style-type: none;
-    counter-reset: item;
-    // margin: 0;
-    // padding: 0;
-  }
-  
-  ol > li {
-    // display: table;
-    counter-increment: item;
 
-  }
-  
-  ol > li:before {
-    content: counters(item, ".") ". ";
-  
-  }
-  
-  
-  li ol > li:before {
-    content: counters(item, ".") " ";
-  }  
+ol {
+    @include ol;
+}
+
+ul {
+ @include ul;
+}
+
+blockquote {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: $font-size-link;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-title-huge;
+    color: $curious-blue;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:visited {
+        color: $aquaIsland;
+    }
+    
+}
