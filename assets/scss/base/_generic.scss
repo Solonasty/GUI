@@ -18,24 +18,81 @@ html {
 }
 
 body {
-    // $font-size: $font-size-base;
+    $font-size: $font-size-base;
 
-    // font-size: rem($font-size);
-    font-weight: $font-weight-medium;
-    // line-height: ($line-height-medium / $font-size);
+    font-weight: $font-weight-regular;
 
     text-rendering: optimizeLegibility;
 }
 
-// h3 {
-//     @include text-large;
+h1 {
+    @include text-huge;
 
-//     margin-top: 0;
-//     margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 
-//     &:not([class]) {
-//         margin-bottom: rem(10px);
+    &:not([class]) {
+        margin-bottom: rem(10px);
+        // @include resetting-vertical-indentation-of-last;
+    }
+}
 
-//         @include resetting-vertical-indentation-of-last;
-//     }
-// }
+h2 {
+    @include text-large;
+    @include removeTopBottomMargin;
+
+    &:not([class]) {
+        margin-bottom: rem(10px);
+        // @include resetting-vertical-indentation-of-last;
+    }
+}
+
+h3 {
+    @include text-medium;
+    @include removeTopBottomMargin;
+
+    &:not([class]) {
+        margin-bottom: rem(10px);
+        // @include resetting-vertical-indentation-of-last;
+    }
+}
+
+p {
+    @include text-small;
+    @include removeTopBottomMargin;
+
+    &:not([class]) {
+        margin-bottom: rem(10px);
+        // @include resetting-vertical-indentation-of-last;
+    }
+}
+
+
+ol {
+    @include ol;
+}
+
+ul {
+ @include ul;
+}
+
+blockquote {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: $font-size-link;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-title-huge;
+    color: $curious-blue;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:visited {
+        color: $aquaIsland;
+    }
+    
+}

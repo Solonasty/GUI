@@ -6,10 +6,13 @@ $bunker: #121920;
 $white: #ffffff;
 $slate-gray: #768298;
 $curious-blue: #34AADD;
+$aquaIsland: #A7CCDC;
 $cerise-red: #DC2C53;
 $tapestry: #A7507B;
 $heather: #BBC4D6;
 $alabaster: #FAFAFA;
+$tuna: #3A3A43;
+$mine-shaft: #3C3C3C;
 
 $color-text: $bunker;
 $color-background: $alabaster;
@@ -27,7 +30,7 @@ $font-family-default: sans-serif;
 $font-family: $font-family-custom, $font-family-default;
 
 $font-weight-regular: 400;
-$font-weight-medium: 500px;
+$font-weight-medium: 500;
 
 $font-size-title-huge: 36px;
 $font-size-title-large: 30px;
@@ -35,10 +38,16 @@ $font-size-title-medium: 24px;
 
 $line-height-title-huge: 130%;
 $line-height-title-large: 127%;
-$line-height-title-medium: 121%;
 
-$font-size-text-main: 14px;
-$font-size-text-big: 16px;
+$line-height-medium: 1.4;
+
+$font-size-text-medium: 14px;
+$font-size-text-large: 16px;
+
+$font-size-link: 18px;
+
+$line-height-text-medium: 170%;
+$line-height-text-large: 160%;
 
 
 /**
@@ -56,14 +65,6 @@ $width-container: 1240px;
 $gap-container: 20px;
 
 $gap-items: rem(32px);
-// $window-width-tablet: 768px;
-// $window-width-mobile: 375px;
-
-// $container-width-tablet: 728px;
-// $container-horizontal-padding: 20px;
-
-// $input-height: 50px;
-
 
 /**
 * Sizes
