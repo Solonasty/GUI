@@ -16,40 +16,30 @@
     font-size: $font-size-title-huge;
     line-height: $line-height-title-huge;
     font-weight: $font-weight-medium;
-
-    color: $bunker; 
 }
 
 @mixin text-large() {
     font-size: $font-size-title-large; 
     line-height: $line-height-title-large;
     font-weight: $font-weight-medium;
-
-    color: $bunker; 
 }
 
 @mixin text-medium() {
     font-size: $font-size-title-medium; 
     line-height: $line-height-title-large;
     font-weight: $font-weight-medium;
-
-    color: $mine-shaft; 
 }
 
 @mixin text-small() {
     font-size: $font-size-text-large; 
     line-height: $line-height-text-large;
     font-weight: $font-weight-medium;
-
-    color: $color-text; 
 }
 
 @mixin text-tuny() {
     font-size: $font-size-title-medium; 
     line-height: $line-height-title-medium;
     font-weight: $font-weight-medium;
-
-    color: $color-title; 
 }
 
 @mixin removeTopBottomMargin {

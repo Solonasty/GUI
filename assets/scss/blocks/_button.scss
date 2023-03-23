@@ -1,32 +1,79 @@
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(10px);
     border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: rgba(220, 0, 0, 1);
-    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 5px 0px 0px 0px;
+    font-weight: $font-weight-medium;
+    font-size: $font-size-text-medium;
+    line-height: 120%;
+
+    &--medium {
+        padding: rem(6px) rem(30px);
+        width: rem(134px);
+        height: rem(29px);
+    }
+
+    &--small {
+        padding: rem(6px) rem(30px);
+        width: rem(79px);
+        height: rem(29px);
+    }
+
+    &--color {
+        color: $white;
+        background: $curious-blue;
+
+        &:hover {
+            background: $wildBlueYonder;
+        }
+    
+        &:active {
+            background: $wildBlueYonder;
+            opacity: .5;
+        }
+    
+        &:disabled { 
+            color: $heather;
+            background: $athensGray;
+        }
+    }
+
+    &--noColor {
+        color: $curious-blue;
+        background: $white;
+
+        &:hover {
+            color: $wildBlueYonder;
+        }
+    
+        &:active {
+            color: $wildBlueYonder;
+            opacity: 0.5;
+        }
+    
+        &:disabled {
+            color: $heather;
+        }
+    }
+
+    &__icon {
+        padding: 10px 30px;
+        width: 176.12px;
+        height: 50px;
+        &.icons {
+            width: 10.12px;
+            height: 9px;
+            &svg {
+                fill: #FFFFFF
+            }
+        }
+    }
+
 }
-
-.styled:hover {
-    background-color: rgba(255, 0, 0, 1);
+.button-icon{
+    width: 10.12px;
+    height: 9px;
+    fill: #FFFFFF;
 }
-
-.styled:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
-}
-
-// короткая
-// длинная
-// широкакя
-
-// обычная
-// :hover
-// :active
-// :disabled
-
-// без заливки (4шт)
