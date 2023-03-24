@@ -19,61 +19,149 @@ html {
 
 body {
     $font-size: $font-size-base;
-
     font-weight: $font-weight-regular;
-
     text-rendering: optimizeLegibility;
 }
 
 h1 {
-    @include text-huge;
-
     margin-top: 0;
     margin-bottom: 0;
+
+    font-size: $font-size-text-large;
+    line-height: $line-height-title-huge;
+    font-weight: $font-weight-medium;
+
+    color: $bunker;
 
     &:not([class]) {
         margin-bottom: rem(10px);
         // @include resetting-vertical-indentation-of-last;
+    }
+
+    @media ($screen-tablet) {
+        font-size: $font-size-title-huge;
+        line-height: $line-height-title-huge;
     }
 }
 
 h2 {
-    @include text-large;
-    @include removeTopBottomMargin;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: $font-size-title-medium;
+    line-height: $line-height-title-large;
+    font-weight: $font-weight-medium;
+
+    color: $bunker;
 
     &:not([class]) {
         margin-bottom: rem(10px);
-        // @include resetting-vertical-indentation-of-last;
+    }
+
+    @media ($screen-tablet) {
+        font-size: $font-size-title-large; 
+        line-height: $line-height-title-large;
     }
 }
 
 h3 {
-    @include text-medium;
-    @include removeTopBottomMargin;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: $font-size-title-small; 
+    line-height: $line-height-title-large;
+    font-weight: $font-weight-medium;
+
+    color: $mine-shaft;
 
     &:not([class]) {
         margin-bottom: rem(10px);
-        // @include resetting-vertical-indentation-of-last;
+    }
+
+    @media ($screen-tablet) {
+        font-size: $font-size-title-medium; 
+        line-height: $line-height-title-large;
     }
 }
 
 p {
-    @include text-small;
-    @include removeTopBottomMargin;
+    // margin-top: 0;
+    // margin-bottom: 0;
+
+    font-size: $font-size-text-large; 
+    line-height: $line-height-text-large;
+    font-weight: $font-weight-medium;
 
     &:not([class]) {
         margin-bottom: rem(10px);
-        // @include resetting-vertical-indentation-of-last;
+    }
+
+    @media ($screen-tablet) {
+        font-size: $font-size-title-medium; 
+        line-height: $line-height-title-large;
     }
 }
 
 
 ol {
-    @include ol;
+    list-style: none;
+    counter-reset: li;
+
+
+    &:not([class]) {
+        padding-inline-start: 20px;
+    }
+    
+    & li {
+        font-size: rem($font-size-text-medium);
+        line-height: rem(16px);
+        counter-increment: li;
+        margin-bottom: rem(10px);
+
+        &::before {
+            content: counters(li, ".") ". ";
+            margin-right: rem(10px);
+            color: $cerise-red;
+            height: 100%;
+            display: inline-block;
+            width: 1em;
+        }
+
+        @media ($screen-tablet) {
+            font-size: ($font-size-text-large);
+            line-height: rem(19px);
+        }
+    }  
 }
 
 ul {
- @include ul;
+    list-style: none;
+
+    &:not([class]) {
+        padding-inline-start: 20px;
+    }
+    
+    & li {
+        display: inline-flex;
+        align-items: center;
+        font-size: rem($font-size-text-medium);
+        line-height: rem(16px);
+        margin-bottom: rem(10px);
+        &::before {
+            content: "";
+            display: inline-block;
+            width: rem(5px);
+            height: rem(5px);
+            margin-right: rem(10px);
+            border-radius: 50%;
+            background-color: $cerise-red;
+        }
+
+        @media ($screen-tablet) {
+            font-size: ($font-size-text-large);
+            line-height: rem(19px);
+        }
+    }  
 }
 
 blockquote {
