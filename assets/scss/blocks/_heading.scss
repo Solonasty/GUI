@@ -1,0 +1,18 @@
+.heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $bunker;
+
+    &--huge {
+        @include text-huge;
+    }
+
+    &--large {
+        @include text-large;
+    }
+
+    &--medium {
+        @include text-medium;
+        color: $mine-shaft;
+    }
+}

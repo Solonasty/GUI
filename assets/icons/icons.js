@@ -13,3 +13,6 @@ import './svg/search.svg';
 import './svg/star-empty.svg';
 import './svg/star-fill.svg';
 import './svg/youtube.svg';
+import './svg/arrow-left.svg';
+import './svg/cross.svg';
+
