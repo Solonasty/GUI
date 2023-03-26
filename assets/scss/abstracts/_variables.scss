@@ -23,35 +23,31 @@ $color-background: $alabaster;
 /**
 * Fonts
 */
+
 $font-size-base: 16px; //?
 
 $font-path: "public/fonts";
 $font-family-custom: "Roboto";
 $font-family-default: sans-serif;
-
 $font-family: $font-family-custom, $font-family-default;
 
-$font-weight-regular: 400;
+$font-size-huge: 36px;
+$font-size-large: 30px;
+$font-size-medium: 24px;
+$font-size-small: 20px;
+$font-size-xSmall: 18px;
+$font-size-xxSmall: 16px;
+$font-size-tiny: 14px;
+
 $font-weight-medium: 500;
+$font-weight-regular: 400;
 
-$font-size-title-huge: 36px;
-$font-size-title-large: 30px;
-$font-size-title-medium: 24px;
-$font-size-title-small: 20px;
-
-$line-height-title-huge: 130%;
-$line-height-title-large: 127%;
-
-$line-height-medium: 1.4;
-
-$font-size-text-medium: 14px;
-$font-size-text-large: 16px;
-
-$font-size-link: 18px;
-
-$line-height-text-medium: 170%;
-$line-height-text-large: 160%;
-
+$line-height-huge: 167%;
+$line-height-large: 160%;
+$line-height-medium: 140%;
+$line-height-small: 130%;
+$line-height-xSmall: 127%;
+$line-height-tiny: 120%;
 
 /**
 * Breakpoints
