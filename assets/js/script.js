@@ -6,7 +6,6 @@ window.$ = $;
 
 // Пример подключения плагина
 // import pluginName from 'plugin-name';
-
 /**
  * Modules
  */
@@ -24,17 +23,12 @@ const app = {
     load() {
 
     },
-
     resize() {
 
     },
-
     scroll() {
-
     },
 };
-
-
 
 $(() => {
     app.ready();

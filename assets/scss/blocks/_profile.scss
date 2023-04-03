@@ -1,0 +1,52 @@
+.profile {
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    &__name {
+        display: none;
+
+        @media #{$screen-tablet} {
+            display: block;
+            color: $slate-gray;
+            font-size: $font-size-tiny;
+            line-height: $line-height-tiny;
+            margin-right: rem(10px);
+        }
+        }
+
+    &__avatar {
+        display: none;
+
+        @media #{$screen-tablet} {
+            display: block;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &__icon {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: $athensGray;
+        border-radius: 50%;
+        position: relative;
+
+        @media #{$screen-tablet} {
+            display: none;
+        }
+    }
+
+    &__icon-pic {
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

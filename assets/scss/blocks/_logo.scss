@@ -1,0 +1,12 @@
+.logo {
+
+    &--small {
+        width: 93.42px;
+        height: 18.1px;
+
+        @media #{$screen-desktop} {
+            width: 135.04px;
+            height: 30.32px;
+        }
+    }
+}

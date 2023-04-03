@@ -56,16 +56,12 @@
         }
 
         &__control {
-            border: 0;
-
-            @media #{$screen-tablet} {
-                border: rem(1px) solid $athensGray;
-            }
+            border: rem(1px) solid $athensGray;
         }
     }
 
     &__control {
-        font-size: rem($font-size-tiny);
+        font-size: $font-size-tiny;
         line-height: $line-height-large;
 
         display: block;
@@ -76,12 +72,23 @@
 
         transition: color .2s linear;
 
-        color: $color-text;
-
         border: rem(1px) solid $athensGray;
         border-radius: rem(5px);
         background-color: $white;
         box-shadow: none;
+
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $heather;
+            opacity: 1; /* Firefox */
+        }
+        
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: $heather;
+        }
+        
+        &::-ms-input-placeholder { /* Microsoft Edge */
+            color: $heather;
+        }
 
         &:focus {
             border-color: $slate-gray;

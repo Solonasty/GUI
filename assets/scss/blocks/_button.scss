@@ -135,6 +135,15 @@
         width: rem(10px);
         display: flex;
         align-items: center;
+
+        &--medium {
+            height: rem(16px);
+            width: rem(16px);
+        }
+
+        &--gray {
+            color: $slate-gray;
+        }
     }
 
 }
