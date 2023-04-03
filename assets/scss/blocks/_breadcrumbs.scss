@@ -45,7 +45,7 @@
     }
 
     &__link {
-        font-size: rem($font-size-tiny);
+        font-size: $font-size-tiny;
         line-height: rem(28px);
 
         display: block;
@@ -63,7 +63,7 @@
             text-decoration: underline;
             color: $slate-gray;
 
-            // transition: ;
+            transition: $transition-duration $transition-function;
         }
 
         &::before,
@@ -78,7 +78,7 @@
 
             content: "";
 
-            background-image: url(/public/images/icons/logo.svg);
+            background-image: url(/public/images/icons/arrow.svg);
             background-repeat: no-repeat;
         }
 
