@@ -1,0 +1,26 @@
+.menu {
+    &__list {
+        display: flex;
+        align-items: center;
+        margin-block-end: 0;
+    }
+
+    &__item {
+        margin-right: rem(30px);
+        margin-bottom: 0;
+        font-size: $font-size-tiny;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+    }
+
+    // &__icon-pic {
+    //     fill: $heather;
+    //     width: rem(40px);
+    //     height: rem(40px);
+    //     margin-right: rem(23px);
+    // }
+
+}

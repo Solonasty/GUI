@@ -115,7 +115,6 @@ ol {
     }
     
     & li {
-        font-size: rem($font-size-medium);
         line-height: rem(16px);
         counter-increment: li;
         margin-bottom: rem(10px);
@@ -127,7 +126,6 @@ ol {
             margin-right: rem(10px);
             color: $cerise-red;
             height: 100%;
-            // display: inline-block;
             width: 1em;
         }
 
@@ -187,7 +185,6 @@ blockquote {
 
 a {
     text-decoration: none;
-    // font-size: $font-size-link;
     font-weight: $font-weight-regular;
     line-height: $line-height-huge;
     color: $curious-blue;
@@ -200,4 +197,8 @@ a {
         color: $aquaIsland;
     }
     
+}
+
+img {
+    width: 100%;
 }
