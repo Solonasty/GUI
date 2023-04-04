@@ -80,14 +80,17 @@
         &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
             color: $heather;
             opacity: 1; /* Firefox */
+            font-size: $font-size-tiny;
         }
         
         &:-ms-input-placeholder { /* Internet Explorer 10-11 */
             color: $heather;
+            font-size: $font-size-tiny;
         }
         
         &::-ms-input-placeholder { /* Microsoft Edge */
             color: $heather;
+            font-size: $font-size-tiny;
         }
 
         &:focus {
@@ -110,7 +113,6 @@
         }
 
         &-error {
-            font-size: rem(10px);
             line-height: $line-height-large;
 
             color: transparent;

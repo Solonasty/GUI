@@ -13,7 +13,7 @@
     justify-content: center;
 
     height: rem($size-normall);
-    padding: 0 rem(30px);
+    padding: 0 rem(20px);
 
     cursor: pointer;
     text-decoration: none;
@@ -21,8 +21,8 @@
     border-radius: rem(5px);
     border: none;
 
-    transition: color .3s linear;
-    transition: background-color .3s linear;
+    transition: color .2s linear;
+    transition: background-color .2s linear;
 
     &--medium {
         height: $size-medium;
@@ -92,10 +92,6 @@
         background: $white;
     }
 
-    &--simple#{&}--disabled {
-        background: $white;
-    }
-
     &--disabled {
         color: $heather;
         cursor: default;
@@ -112,15 +108,15 @@
 
         .button__icon--tab {
             margin: 5px;
-            height: 12px;
-            width: 12px;
+            height: 100%;
+            width: 100%;
             background-color: transparent;
         }
 
         &:hover {
             color: $slate-gray;
-            transition: color .3s linear;
-            transition: background-color .3s linear;
+            transition: color .2s linear;
+            transition: background-color .2s linear;
         }
     }
 
@@ -146,7 +142,6 @@
             color: $slate-gray;
         }
     }
-
 }
 
 
