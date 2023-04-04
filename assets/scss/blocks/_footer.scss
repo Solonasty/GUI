@@ -1,5 +1,4 @@
 .footer {
-    height: rem($height-footer-mobile);
     background-color: $white;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
     display: flex;
@@ -13,55 +12,50 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
         flex-direction: column;
 
         @media #{$screen-tablet} {
             flex-direction: row;
-            justify-content: flex-start;
-    
         }
         
     }
 
     &__col {
-
         &--social {
+            width: 100%;
+            padding: rem(20px) 0;
+            border-bottom: 1px solid $heather;
 
-            &:after{ 
-                content: " ";
-                background-color: $heather;
-                position: absolute;
-                width: rem(1px);
-                height: rem(40px);
-                // top: 0;
-                // left: rem(143px);
-                display: block;
-                transform: rotate(90deg);
+            @media #{$screen-tablet} {
+                width: auto;
+                padding-right: rem(40px);
+                border-bottom: none;
+            }
 
-                @media #{$screen-desktop} {
-                    display: none;
-                }
-
-                @media #{$screen-desktop} {
-                        position: absolute;
-                        width: rem(1px);
-                        height: rem(40px);
-                        top: 0;
-                        left: rem(143px);
-                        display: block;
+            @media #{$screen-desktop} {
+                padding: 0;
+                padding-right: rem(40px);
+                margin: rem(20px) 0;
+                border-right: 1px solid $heather;
             }
         }
-    }
 
         &--menu {
-            margin-left: rem(80px);
+            width: 100%;
+            padding: rem(20px) 0;
+            border-bottom: 1px solid $heather;
+
+            @media #{$screen-tablet} {
+                border-bottom: none;
+            }
+
+            @media #{$screen-desktop} {
+                margin-left: rem(40px);
+            }
         }
 
         &--logo {
-            position: absolute;
-            display: block;
-            right: 0;
+            padding: rem(20px) 0;
         }
     }
 }
