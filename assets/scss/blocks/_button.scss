@@ -111,11 +111,12 @@
         background-color: transparent;
 
         .button__icon--tab {
-            margin: 10px;
-            height: 40px;
-            width: 40px;
+            margin: 5px;
+            height: 12px;
+            width: 12px;
             background-color: transparent;
         }
+
         &:hover {
             color: $slate-gray;
             transition: color .3s linear;
