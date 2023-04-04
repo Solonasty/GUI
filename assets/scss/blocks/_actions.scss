@@ -1,0 +1,28 @@
+.actions {
+    display: flex;
+    align-items: center;
+
+    margin-right: rem(12px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        &--icon {
+            width: rem(13px);
+            height: rem(12px);
+
+            margin-right: rem(11px);
+        }
+
+        &--number {
+            font-size: rem(12px);
+        }
+    }
+}

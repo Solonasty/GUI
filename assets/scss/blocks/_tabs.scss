@@ -1,0 +1,43 @@
+.tabs {
+    transition: $transition-duration $transition-function;
+
+    &--blue & {
+        &__item {
+            color: $curious-blue;
+            border-radius: rem(4px);
+            background-color: $athensGray;
+
+            &--active {
+                color: $white;
+                background-color: $curious-blue;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        font-size: $font-size-xxSmall;
+        font-weight: $font-weight-medium;
+        line-height: rem(20px);
+
+        padding: rem(10px) rem(20px);
+
+        cursor: pointer;
+
+        & + & {
+            margin-left: rem(20px);
+        }
+    }
+
+    &__block {
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
+}
