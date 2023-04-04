@@ -10,33 +10,23 @@
             .gui__block {
                 margin-bottom: 50px;
             }
+
+            .tabs__items-gui {
+                margin-bottom: 10px;
+            }
+            .tabs-gui {
+                margin-bottom: 20px;
+            }
         
             .gui-icon{
                 width: 50px;
                 height: 50px;
-            }
-        
-            .buttons__list,
-            .gui-icons__list,
-            .social__list,
-            .menu__list,
-            .breadcrumbs__list {
-                padding-inline-start:0;
-                margin-block-start: 0;
-            }
-        
-            .buttons ul li:before,
-            .gui-icons ul li:before,
-            .social__list li:before,
-            .menu__list li:before,
-            .breadcrumbs__list li:before {
-                content: none;
-                margin-right: 0;
-                padding-left: 0;
-                padding-inline-start:0;
-            }
-
+            }   
             
+            .buttons__item-gui{
+                width: 50px;
+                height: 50px;
+            }  
         
             .buttons__list, .gui-icons__list {
                 display: flex;
@@ -183,7 +173,7 @@
                     </div>
 
                     <!-- Иконки -->                   
-                    <div class="gui__block">
+                    <!-- <div class="gui__block">
                         <h3>Иконки</h3>
                         <div class="gui-icons">
                             <ul class="gui-icons__list">
@@ -235,7 +225,7 @@
                             </ul>
 
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Кнопки -->
                     <div class="gui__block">
@@ -373,7 +363,7 @@
                         <div class="buttons">
                             <ul class="buttons__list">
 
-                                <li class="buttons__item">
+                                <li class="buttons__item buttons__item-gui">
                                     <button type="button" class="button button--iconed button--tabIcon">
                                         <span class="button__icon button__icon--tab">
                                             <svg class="icon">
@@ -383,7 +373,7 @@
                                     </button>
                                 </li>
 
-                                <li class="buttons__item">
+                                <li class="buttons__item buttons__item-gui">
                                     <button type="button" class="button button--iconed button--tabIcon">
                                         <span class="button__icon button__icon--tab">
                                             <svg class="icon">
@@ -530,7 +520,6 @@
 
                     </div>
 
-
                     <!-- Карточки -->
                     <div class="gui__block">
 
@@ -539,44 +528,379 @@
                         <div class="cards">
                             <ul class="cards__list">
 
-                                <li class="cards__item cards__item--big">
+                                <li class="cards__item">
                                     <article class="card">
+
                                         <div class="card__image">
                                             <div class="card__box">
-                                                <img src="/public/images/" alt="" class="card__image-pic">
+                                                <img src="/public/images/card1.jpg" alt="" class="card__image-pic">
                                             </div>
                                         </div>
+
+                                        <div class="card__content">
+                                            <h4 class="card__heading">Результаты за 3-й квартал и 9 месяцев 2019 года</h4>
+                                            <p class="card__text">Не усложняйте себе жизнь,перемещаясь по палитре цветов вверх и вниз, чтобы создавать р...ре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создавать</p>
+                                        </div>
+
+                                        <div class="card__footer">
+
+                                            <div class="card__footer--date">
+                                                <span>04.02.2022</span>
+                                            </div>
+
+                                            <div class="card__footer--actions actions">
+
+                                                <div class="actions__block">
+                                                    <div class="actions__item--icon">
+                                                        <button type="button" class="button button--iconed button--tabIcon">
+                                                            <span class="button__icon button__icon--tab">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="/public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="actions__item--number">
+                                                        <span>123</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="actions__block">
+                                                    <div class="actions__item--icon">
+                                                        <button type="button" class="button button--iconed button--tabIcon">
+                                                            <span class="button__icon button__icon--tab">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="/public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="actions__item--number">
+                                                        <span>123</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="actions__block">
+                                                    <div class="actions__item--icon">
+                                                        <button type="button" class="button button--iconed button--tabIcon">
+                                                            <span class="button__icon button__icon--tab">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="/public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="actions__item--number">
+                                                        <span>123</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        
                                     </article>
                                 </li>
 
                                 <li class="cards__item">
                                     <article class="card">
-                                        Карточка2
+
+                                        <div class="card__image">
+                                            <div class="card__box">
+                                                <img src="/public/images/card1.jpg" alt="" class="card__image-pic">
+                                            </div>
+                                        </div>
+
+                                        <div class="card__content">
+                                            <h4 class="card__heading">Результаты за 3-й квартал и 9 месяцев 2019 года</h4>
+                                            <p class="card__text">Не усложняйте себе жизнь,перемещаясь по палитре цветов вверх и вниз, чтобы создавать р...ре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создавать</p>
+                                        </div>
+
+                                        <div class="card__footer">
+
+                                            <div class="card__footer--date">
+                                                <span>04.02.2022</span>
+                                            </div>
+
+                                            <div class="card__footer--actions actions">
+
+                                                <div class="actions__block">
+                                                    <div class="actions__item--icon">
+                                                        <button type="button" class="button button--iconed button--tabIcon">
+                                                            <span class="button__icon button__icon--tab">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="/public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="actions__item--number">
+                                                        <span>123</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="actions__block">
+                                                    <div class="actions__item--icon">
+                                                        <button type="button" class="button button--iconed button--tabIcon">
+                                                            <span class="button__icon button__icon--tab">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="/public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="actions__item--number">
+                                                        <span>123</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="actions__block">
+                                                    <div class="actions__item--icon">
+                                                        <button type="button" class="button button--iconed button--tabIcon">
+                                                            <span class="button__icon button__icon--tab">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="/public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="actions__item--number">
+                                                        <span>123</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        
                                     </article>
                                 </li>
 
                                 <li class="cards__item">
                                     <article class="card">
-                                        Карточка3
+
+                                        <div class="card__image">
+                                            <div class="card__box">
+                                                <img src="/public/images/card1.jpg" alt="" class="card__image-pic">
+                                            </div>
+                                        </div>
+
+                                        <div class="card__content">
+                                            <h4 class="card__heading">Результаты за 3-й квартал и 9 месяцев 2019 года</h4>
+                                            <p class="card__text">Не усложняйте себе жизнь,перемещаясь по палитре цветов вверх и вниз, чтобы создавать р...ре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создавать</p>
+                                        </div>
+
+                                        <div class="card__footer">
+
+                                            <div class="card__footer--date">
+                                                <span>04.02.2022</span>
+                                            </div>
+
+                                            <div class="card__footer--actions actions">
+
+                                                <div class="actions__block">
+                                                    <div class="actions__item--icon">
+                                                        <button type="button" class="button button--iconed button--tabIcon">
+                                                            <span class="button__icon button__icon--tab">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="/public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="actions__item--number">
+                                                        <span>123</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="actions__block">
+                                                    <div class="actions__item--icon">
+                                                        <button type="button" class="button button--iconed button--tabIcon">
+                                                            <span class="button__icon button__icon--tab">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="/public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="actions__item--number">
+                                                        <span>123</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="actions__block">
+                                                    <div class="actions__item--icon">
+                                                        <button type="button" class="button button--iconed button--tabIcon">
+                                                            <span class="button__icon button__icon--tab">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="/public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="actions__item--number">
+                                                        <span>123</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        
+                                    </article>
+                                </li>
+
+                                <li class="cards__item cards__item--big">
+                                    <article class="card card--big">
+
+                                        <div class="card__image">
+                                            <div class="card__box">
+                                                <img src="/public/images/card4.jpg" alt="" class="card__image-pic">
+                                            </div>
+                                        </div>
+
+                                        <div class="card__content">
+                                            <h4 class="card__heading">Результаты за 3-й квартал и 9 месяцев 2019 года</h4>
+                                            <p class="card__text">Не усложняйте себе жизнь,перемещаясь по палитре цветов вверх и вниз, чтобы создавать р...ре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создавать</p>
+                                        </div>
+
+                                        <div class="card__footer">
+
+                                            <div class="card__footer--date">
+                                                <span>04.02.2022</span>
+                                            </div>
+
+                                            <div class="card__footer--actions actions">
+
+                                                <div class="actions__block">
+                                                    <div class="actions__item--icon">
+                                                        <button type="button" class="button button--iconed button--tabIcon">
+                                                            <span class="button__icon button__icon--tab">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="/public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="actions__item--number">
+                                                        <span>123</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="actions__block">
+                                                    <div class="actions__item--icon">
+                                                        <button type="button" class="button button--iconed button--tabIcon">
+                                                            <span class="button__icon button__icon--tab">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="/public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="actions__item--number">
+                                                        <span>123</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="actions__block">
+                                                    <div class="actions__item--icon">
+                                                        <button type="button" class="button button--iconed button--tabIcon">
+                                                            <span class="button__icon button__icon--tab">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="/public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="actions__item--number">
+                                                        <span>123</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        
                                     </article>
                                 </li>
 
                                 <li class="cards__item">
                                     <article class="card">
-                                        Карточка4
-                                    </article>
-                                </li>
 
-                                <li class="cards__item">
-                                    <article class="card">
-                                        Карточка5
+                                        <div class="card__image">
+                                            <div class="card__box">
+                                                <img src="/public/images/card1.jpg" alt="" class="card__image-pic">
+                                            </div>
+                                        </div>
+
+                                        <div class="card__content">
+                                            <h4 class="card__heading">Результаты за 3-й квартал и 9 месяцев 2019 года</h4>
+                                            <p class="card__text">Не усложняйте себе жизнь,перемещаясь по палитре цветов вверх и вниз, чтобы создавать р...ре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создаватьре цветов вверх и вниз, чтобы создавать</p>
+                                        </div>
+
+                                        <div class="card__footer">
+
+                                            <div class="card__footer--date">
+                                                <span>04.02.2022</span>
+                                            </div>
+
+                                            <div class="card__footer--actions actions">
+
+                                                <div class="actions__block">
+                                                    <div class="actions__item--icon">
+                                                        <button type="button" class="button button--iconed button--tabIcon">
+                                                            <span class="button__icon button__icon--tab">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="/public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="actions__item--number">
+                                                        <span>123</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="actions__block">
+                                                    <div class="actions__item--icon">
+                                                        <button type="button" class="button button--iconed button--tabIcon">
+                                                            <span class="button__icon button__icon--tab">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="/public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="actions__item--number">
+                                                        <span>123</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="actions__block">
+                                                    <div class="actions__item--icon">
+                                                        <button type="button" class="button button--iconed button--tabIcon">
+                                                            <span class="button__icon button__icon--tab">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="/public/images/icons/sprite.svg#icon-like"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="actions__item--number">
+                                                        <span>123</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        
                                     </article>
                                 </li>
                             </ul>
                         </div>
 
                     </div>
-
 
                     <!-- Хлебные крошки -->
                     <div class="gui__block">
@@ -634,6 +958,59 @@
                                 </li>
                             </ul>
                         </nav>
+
+                    </div>
+
+                    <!-- Табы -->
+                    <div class="gui__block">
+
+                        <h3>Табы</h3>
+
+                        <div class="tabs tabs--blue tabs-gui" data-tabs>
+
+                            <nav class="tabs__items tabs__items-gui">
+                                <ul class="tabs__list">
+                                    <li class="tabs__item tabs__item--active" data-tab="news">
+                                        Новости
+                                    </li>
+                                    <li class="tabs__item" data-tab="sale">
+                                        Акции
+                                    </li>    
+                                </ul>
+                            </nav>
+
+                            <div class="tabs__body">
+                                <div class="tabs__block tabs__block--active" data-tab-section="news">
+                                    Новости
+                                </div>
+                                <div class="tabs__block" data-tab-section="sale">
+                                    Акции
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tabs tabs--red tabs-gui" data-tabs>
+
+                            <nav class="tabs__items tabs__items-gui">
+                                <ul class="tabs__list">
+                                    <li class="tabs__item tabs__item--active" data-tab="news">
+                                        Новости
+                                    </li>
+                                    <li class="tabs__item" data-tab="sale">
+                                        Акции
+                                    </li>    
+                                </ul>
+                            </nav>
+
+                            <div class="tabs__body">
+                                <div class="tabs__block tabs__block--active" data-tab-section="news">
+                                    Новости
+                                </div>
+                                <div class="tabs__block" data-tab-section="sale">
+                                    Акции
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
 
@@ -706,6 +1083,7 @@
         </footer>
 
 
+        <script src="./public/js/script.js"></script>
     </body>
 </html>
 
