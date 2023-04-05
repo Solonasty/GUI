@@ -10,4 +10,7 @@
 .idea/
 *.swp 
 
+/public
+/node_modules
+
 
