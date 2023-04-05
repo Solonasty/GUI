@@ -74,7 +74,7 @@ $gap-items: rem(32px);
 $height-header-mobile: 105px;
 $height-header-desktop: 80px;
 
-$height-footer-mobile: 274px;
+// $height-footer-mobile: 274px;
 $height-footer-desktop: 102px;
 
 $width-sidebar: rem(286px);
@@ -105,4 +105,6 @@ $border-radius-small: 5px;
 */
 
 $z-index-header: 100;
+$z-index-card-img: 50;
+$z-index-card-text: 10;
 

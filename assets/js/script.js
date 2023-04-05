@@ -12,12 +12,15 @@ window.$ = $;
 // Пример подключения модуля
 // import myModule from './modules/my-module-function';
 
+import tabs from './modules/tabs';
+
 const app = {
     ready() {
         // Пример вызова импортированнывх функций
         // pluginName();
 
         // myModule();
+        tabs();
     },
 
     load() {
