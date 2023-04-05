@@ -101,13 +101,15 @@
     }
 
     &--iconed#{&}--tabIcon { // блок в виде иконки
+        display: block;
         height: 100%;
+        width: 100%;
         padding: 0;
         color: $heather;
         background-color: transparent;
 
         .button__icon--tab {
-            margin: 5px;
+            margin: 0 auto;
             height: 100%;
             width: 100%;
             background-color: transparent;

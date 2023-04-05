@@ -139,6 +139,22 @@
         }
     }
 
+    &__icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: rem(35px);
+        height: rem(35px);
+
+        padding: rem(6px);
+
+        background-color: $white;
+        color: red;
+        // fill: $curious-blue;
+        stroke: $curious-blue;
+    }
+
     .cards__item & {
         &--big {
 
