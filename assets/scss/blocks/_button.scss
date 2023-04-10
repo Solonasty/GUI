@@ -1,150 +1,150 @@
-.button {
+// .button {
 
-    $size-normall: 50px; // Основной стиль
-    $size-medium: 40px;
-    $size-small: 29px;
-    $size-mini: 24px;
+//     $size-normall: 50px; // Основной стиль
+//     $size-medium: 40px;
+//     $size-small: 29px;
+//     $size-mini: 24px;
 
-    @include text-tiny;
+//     @include text-tiny;
 
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
 
-    height: rem($size-normall);
-    padding: 0 rem(20px);
+//     height: rem($size-normall);
+//     padding: 0 rem(20px);
 
-    cursor: pointer;
-    text-decoration: none;
-    color: $white;
-    border-radius: rem(5px);
-    border: none;
+//     cursor: pointer;
+//     text-decoration: none;
+//     color: $white;
+//     border-radius: rem(5px);
+//     border: none;
 
-    transition: color .2s linear;
-    transition: background-color .2s linear;
+//     transition: color .2s linear;
+//     transition: background-color .2s linear;
 
-    &--medium {
-        height: $size-medium;
-    }
+//     &--medium {
+//         height: $size-medium;
+//     }
 
-    &--small {
-        height: $size-small;
-    }
+//     &--small {
+//         height: $size-small;
+//     }
 
-    &--squared {
-        border-radius: rem(5px) 0 0 0;
-    }
+//     &--squared {
+//         border-radius: rem(5px) 0 0 0;
+//     }
 
-    &--color {
-        color: $white;
-        background: $curious-blue;
+//     &--color {
+//         color: $white;
+//         background: $curious-blue;
 
-        &:hover {
-            background: $wildBlueYonder;
-        }
+//         &:hover {
+//             background: $wildBlueYonder;
+//         }
     
-        &:active {
-            background: $wildBlueYonder;
-            opacity: .5;
-        }
-    }
+//         &:active {
+//             background: $wildBlueYonder;
+//             opacity: .5;
+//         }
+//     }
 
-    &--noColor {
-        color: $curious-blue;
-        background: $white;
+//     &--noColor {
+//         color: $curious-blue;
+//         background: $white;
 
-        &:hover {
-            color: $wildBlueYonder;
-        }
+//         &:hover {
+//             color: $wildBlueYonder;
+//         }
     
-        &:active {
-            color: $wildBlueYonder;
-            opacity: 0.5;
-        }
-    }
+//         &:active {
+//             color: $wildBlueYonder;
+//             opacity: 0.5;
+//         }
+//     }
 
-    &--simple { // стиль для кнопки
-        height: auto;
-        color: $curious-blue;
-        padding: 5px;
-        background: transparent;
+//     &--simple { // стиль для кнопки
+//         height: auto;
+//         color: $curious-blue;
+//         padding: 5px;
+//         background: transparent;
 
-        &__text {
-            padding: 5px;
-        }
+//         &__text {
+//             padding: 5px;
+//         }
 
-        &:hover {
-            color: $wildBlueYonder;
-        }
+//         &:hover {
+//             color: $wildBlueYonder;
+//         }
     
-        &:active {
-            color: $wildBlueYonder;
-            opacity: 0.5;
-        }
-    }
+//         &:active {
+//             color: $wildBlueYonder;
+//             opacity: 0.5;
+//         }
+//     }
 
-    &--color#{&}--disabled {
-        background: $athensGray;
-    }
+//     &--color#{&}--disabled {
+//         background: $athensGray;
+//     }
 
-    &--noColor#{&}--disabled {
-        background: $white;
-    }
+//     &--noColor#{&}--disabled {
+//         background: $white;
+//     }
 
-    &--disabled {
-        color: $heather;
-        cursor: default;
-        &:hover {
-            color: none;
-        }
-    }
+//     &--disabled {
+//         color: $heather;
+//         cursor: default;
+//         &:hover {
+//             color: none;
+//         }
+//     }
 
-    &--iconed#{&}--tabIcon { // блок в виде иконки
-        display: block;
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        color: $heather;
-        background-color: transparent;
+//     &--iconed#{&}--tabIcon { // блок в виде иконки
+//         display: block;
+//         height: 100%;
+//         width: 100%;
+//         padding: 0;
+//         color: $heather;
+//         background-color: transparent;
 
-        .button__icon--tab {
-            margin: 0 auto;
-            height: 100%;
-            width: 100%;
-            background-color: transparent;
-        }
+//         .button__icon--tab {
+//             margin: 0 auto;
+//             height: 100%;
+//             width: 100%;
+//             background-color: transparent;
+//         }
 
-        &:hover {
-            color: $slate-gray;
-            transition: color .2s linear;
-            transition: background-color .2s linear;
-        }
-    }
+//         &:hover {
+//             color: $slate-gray;
+//             transition: color .2s linear;
+//             transition: background-color .2s linear;
+//         }
+//     }
 
-    &__text {
-        font-weight: $font-weight-medium;
-        display: block;
-        margin-right: rem(10px);
-        margin-left: rem(10px);
-    }
+//     &__text {
+//         font-weight: $font-weight-medium;
+//         display: block;
+//         margin-right: rem(10px);
+//         margin-left: rem(10px);
+//     }
 
-    &__icon { // стилизация иконки в кнопке с иконкой
-        height: rem(10px);
-        width: rem(10px);
-        display: flex;
-        align-items: center;
+//     &__icon { // стилизация иконки в кнопке с иконкой
+//         height: rem(10px);
+//         width: rem(10px);
+//         display: flex;
+//         align-items: center;
 
-        &--medium {
-            height: rem(16px);
-            width: rem(16px);
-        }
+//         &--medium {
+//             height: rem(16px);
+//             width: rem(16px);
+//         }
 
-        &--gray {
-            color: $slate-gray;
-        }
-    }
-}
+//         &--gray {
+//             color: $slate-gray;
+//         }
+//     }
+// }
 
 
 
