@@ -1,6 +1,8 @@
 .header {
     height: rem($height-header-mobile);
+
     background-color: $white;
+
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
 
     @media #{$screen-tablet} {
@@ -23,29 +25,33 @@
         }
 
         &--search {
+            position: absolute;
+            top: rem(65px);
+            right: 0;
+
             width: 100%;
-            margin-right: rem(50px);
 
             @media #{$screen-tablet} {
+                position: relative;
+                top: 0;
+
                 margin-right: rem(61px);
             }
         }
 
         &--profile {
-            border-left: rem(1px) solid $athensGray;
+            padding-top: rem(20px);
+            padding-bottom: rem(20px);
             padding-left: rem(19px);
-            padding-top: rem(32.5px);
-            padding-bottom: rem(32.5px);
 
             @media #{$screen-tablet} {
-                padding-top: rem(20px);
-                padding-bottom: rem(20px);
+                border-left: rem(1px) solid $athensGray;
             }
         }
     }
 
     &__logo {
-        width: 135.04px;
-        height: 30.32px;
+        width: rem(135px);
+        height: rem(30px);
     }
 }

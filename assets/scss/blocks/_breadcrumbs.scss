@@ -51,7 +51,6 @@
         display: block;
 
         text-decoration: none;
-
         color: $heather;
 
         @media #{$screen-tablet} {
@@ -60,10 +59,10 @@
         }
 
         &:hover {
+            transition: $transition-duration $transition-function;
+
             text-decoration: underline;
             color: $slate-gray;
-
-            transition: $transition-duration $transition-function;
         }
 
         &::before,
@@ -74,11 +73,10 @@
             width: rem(6px);
             height: rem(10px);
 
+            content: "";
             transform: translateY(-50%);
 
-            content: "";
-
-            background-image: url(/soloveva_a_qschool/public/images/icons/arrow.svg);
+            background-image: url(/public/images/icons/arrow.svg);
             background-repeat: no-repeat;
         }
 
