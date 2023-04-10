@@ -10,9 +10,9 @@ import './svg/like.svg';
 import './svg/person.svg';
 import './svg/question.svg';
 import './svg/search.svg';
-import './svg/star-empty.svg';
 import './svg/star-fill.svg';
 import './svg/youtube.svg';
 import './svg/arrow-left.svg';
 import './svg/cross.svg';
+import './svg/eye.svg';
 

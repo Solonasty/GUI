@@ -1,4 +1,4 @@
-.menu {
+.docs {
     &__list {
         display: flex;
         align-items: center;
@@ -11,6 +11,7 @@
 
     &__item {
         margin-bottom: rem(20px);
+
         color: $curious-blue;
 
         &:last-child {
@@ -18,10 +19,11 @@
         }
 
         @media #{$screen-tablet} {
+            font-size: $font-size-tiny;
+
             margin-right: rem(30px);
             margin-bottom: 0;
-            font-size: $font-size-tiny;
-    
+
             &:last-child {
                 margin-right: 0;
             }

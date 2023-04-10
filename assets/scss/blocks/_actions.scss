@@ -17,8 +17,14 @@
         &--icon {
             width: rem(13px);
             height: rem(12px);
-
             margin-right: rem(6px);
+
+            fill:#bbc4d6;
+
+            :hover {
+                fill: #768298;
+                transition: .1s linear;
+            }
         }
 
         &--number {

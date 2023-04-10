@@ -33,6 +33,7 @@
                 align-items: flex-end;
                 justify-content: left;
                 gap: 15px;
+                flex-wrap: wrap;
             }
 
             .form {
@@ -93,7 +94,6 @@
                             </span>
                         </div>
                     </div>
-
                 </div>
             </div>
         </header>
@@ -173,7 +173,7 @@
                     </div>
 
                     <!-- Иконки -->                   
-                    <!-- <div class="gui__block">
+                    <div class="gui__block">
                         <h3>Иконки</h3>
                         <div class="gui-icons">
                             <ul class="gui-icons__list">
@@ -225,7 +225,7 @@
                             </ul>
 
                         </div>
-                    </div> -->
+                    </div>
 
                     <!-- Кнопки -->
                     <div class="gui__block">
@@ -530,7 +530,6 @@
 
                                 <li class="cards__item">
                                     <article class="card">
-
                                         <div class="card__image">
                                             <div class="card__box">
                                                 <img src="public/images/card1.jpg" alt="" class="card__image-pic">
@@ -539,9 +538,7 @@
 
                                         <div class="card__content">
                                             <h4 class="card__heading">Результаты за 3-й квартал и 9 месяцев 2019 года</h4>
-                                            <p class="card__text">Не усложняйте себе жизнь,
-                                                перемещаясь по палитре цветов
-                                                вверх и вниз, чтобы создавать р...</p>
+                                            <p class="card__text">В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотв...</p>
                                         </div>
 
                                         <div class="card__footer">
@@ -572,13 +569,13 @@
                                                         <button type="button" class="button button--iconed button--tabIcon">
                                                             <span class="button__icon button__icon--tab">
                                                                 <svg class="icon">
-                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-comments"></use>
                                                                 </svg>
                                                             </span>
                                                         </button>
                                                     </div>
                                                     <div class="actions__item--number">
-                                                        <span>123</span>
+                                                        <span>76</span>
                                                     </div>
                                                 </div>
 
@@ -587,13 +584,13 @@
                                                         <button type="button" class="button button--iconed button--tabIcon">
                                                             <span class="button__icon button__icon--tab">
                                                                 <svg class="icon">
-                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-eye"></use>
                                                                 </svg>
                                                             </span>
                                                         </button>
                                                     </div>
                                                     <div class="actions__item--number">
-                                                        <span>123</span>
+                                                        <span>34</span>
                                                     </div>
                                                 </div>
 
@@ -604,19 +601,17 @@
                                         <div class="card__icon">
                                             <button type="button" class="button button--iconed button--tabIcon">
                                                 <span class="button__icon button__icon--tab">
-                                                    <svg class="icon">
-                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-empty"></use>
+                                                    <svg class="icon card__icon-star">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
                                                     </svg>
                                                 </span>
                                             </button>
                                         </div>
-                                        
                                     </article>
                                 </li>
 
                                 <li class="cards__item">
                                     <article class="card">
-
                                         <div class="card__image">
                                             <div class="card__box">
                                                 <img src="public/images/card2.jpg" alt="" class="card__image-pic">
@@ -657,13 +652,13 @@
                                                         <button type="button" class="button button--iconed button--tabIcon">
                                                             <span class="button__icon button__icon--tab">
                                                                 <svg class="icon">
-                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-comments"></use>
                                                                 </svg>
                                                             </span>
                                                         </button>
                                                     </div>
                                                     <div class="actions__item--number">
-                                                        <span>123</span>
+                                                        <span>76</span>
                                                     </div>
                                                 </div>
 
@@ -672,26 +667,34 @@
                                                         <button type="button" class="button button--iconed button--tabIcon">
                                                             <span class="button__icon button__icon--tab">
                                                                 <svg class="icon">
-                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-eye"></use>
                                                                 </svg>
                                                             </span>
                                                         </button>
                                                     </div>
                                                     <div class="actions__item--number">
-                                                        <span>123</span>
+                                                        <span>34</span>
                                                     </div>
                                                 </div>
 
                                             </div>
 
                                         </div>
-                                        
+
+                                        <div class="card__icon card__icon--active">
+                                            <button type="button" class="button button--iconed button--tabIcon">
+                                                <span class="button__icon button__icon--tab">
+                                                    <svg class="icon card__icon-star">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </div>
                                     </article>
                                 </li>
 
                                 <li class="cards__item">
                                     <article class="card">
-
                                         <div class="card__image">
                                             <div class="card__box">
                                                 <img src="public/images/card3.jpg" alt="" class="card__image-pic">
@@ -731,13 +734,13 @@
                                                         <button type="button" class="button button--iconed button--tabIcon">
                                                             <span class="button__icon button__icon--tab">
                                                                 <svg class="icon">
-                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-comments"></use>
                                                                 </svg>
                                                             </span>
                                                         </button>
                                                     </div>
                                                     <div class="actions__item--number">
-                                                        <span>123</span>
+                                                        <span>76</span>
                                                     </div>
                                                 </div>
 
@@ -746,26 +749,34 @@
                                                         <button type="button" class="button button--iconed button--tabIcon">
                                                             <span class="button__icon button__icon--tab">
                                                                 <svg class="icon">
-                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-eye"></use>
                                                                 </svg>
                                                             </span>
                                                         </button>
                                                     </div>
                                                     <div class="actions__item--number">
-                                                        <span>123</span>
+                                                        <span>34</span>
                                                     </div>
                                                 </div>
 
                                             </div>
 
                                         </div>
-                                        
+
+                                        <div class="card__icon">
+                                            <button type="button" class="button button--iconed button--tabIcon">
+                                                <span class="button__icon button__icon--tab">
+                                                    <svg class="icon card__icon-star">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </div>
                                     </article>
                                 </li>
 
                                 <li class="cards__item cards__item--big">
                                     <article class="card card--big">
-
                                         <div class="card__image">
                                             <div class="card__box">
                                                 <img src="public/images/card4.jpg" alt="" class="card__image-pic">
@@ -780,7 +791,7 @@
                                                 правило, выступало стило. Можно выделить два основных типа табличек: гл...</p>
                                         </div>
 
-                                        <div class="card__footer">
+                                        <div class="card__footer card__footer--big">
 
                                             <div class="card__footer--date">
                                                 <span>04.02.2022</span>
@@ -808,13 +819,13 @@
                                                         <button type="button" class="button button--iconed button--tabIcon">
                                                             <span class="button__icon button__icon--tab">
                                                                 <svg class="icon">
-                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-comments"></use>
                                                                 </svg>
                                                             </span>
                                                         </button>
                                                     </div>
                                                     <div class="actions__item--number">
-                                                        <span>123</span>
+                                                        <span>76</span>
                                                     </div>
                                                 </div>
 
@@ -823,26 +834,34 @@
                                                         <button type="button" class="button button--iconed button--tabIcon">
                                                             <span class="button__icon button__icon--tab">
                                                                 <svg class="icon">
-                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-eye"></use>
                                                                 </svg>
                                                             </span>
                                                         </button>
                                                     </div>
                                                     <div class="actions__item--number">
-                                                        <span>123</span>
+                                                        <span>34</span>
                                                     </div>
                                                 </div>
 
                                             </div>
 
                                         </div>
-                                        
+
+                                        <div class="card__icon card__icon--big">
+                                            <button type="button" class="button button--iconed button--tabIcon">
+                                                <span class="button__icon button__icon--tab">
+                                                    <svg class="icon card__icon-star">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </div>
                                     </article>
                                 </li>
 
                                 <li class="cards__item">
                                     <article class="card">
-
                                         <div class="card__image">
                                             <div class="card__box">
                                                 <img src="public/images/card5.jpg" alt="" class="card__image-pic">
@@ -885,13 +904,13 @@
                                                         <button type="button" class="button button--iconed button--tabIcon">
                                                             <span class="button__icon button__icon--tab">
                                                                 <svg class="icon">
-                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-comments"></use>
                                                                 </svg>
                                                             </span>
                                                         </button>
                                                     </div>
                                                     <div class="actions__item--number">
-                                                        <span>123</span>
+                                                        <span>76</span>
                                                     </div>
                                                 </div>
 
@@ -900,20 +919,29 @@
                                                         <button type="button" class="button button--iconed button--tabIcon">
                                                             <span class="button__icon button__icon--tab">
                                                                 <svg class="icon">
-                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                                                    <use xlink:href="public/images/icons/sprite.svg#icon-eye"></use>
                                                                 </svg>
                                                             </span>
                                                         </button>
                                                     </div>
                                                     <div class="actions__item--number">
-                                                        <span>123</span>
+                                                        <span>34</span>
                                                     </div>
                                                 </div>
 
                                             </div>
 
                                         </div>
-                                        
+
+                                        <div class="card__icon">
+                                            <button type="button" class="button button--iconed button--tabIcon">
+                                                <span class="button__icon button__icon--tab">
+                                                    <svg class="icon card__icon-star">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </div>
                                     </article>
                                 </li>
                             </ul>
@@ -1067,20 +1095,19 @@
                         </div>
                     </div>
 
-                    <div class="footer__col footer__col--menu">
+                    <div class="footer__col footer__col--docs">
+                        <div class="footer__docs docs">
+                            <ul class="docs__list">
 
-                        <div class="footer__menu menu">
-                            <ul class="menu__list">
-
-                                <li class="menu__item">
+                                <li class="docs__item">
                                     <a href="#">Правила</a>
                                 </li>
 
-                                <li class="menu__item">
+                                <li class="docs__item">
                                     <a href="#">Документы</a>
                                 </li>
 
-                                <li class="menu__item">
+                                <li class="docs__item">
                                     <a href="#">Политика конфиденциальности</a>
                                 </li>
 
@@ -1102,7 +1129,7 @@
         </footer>
 
 
-        <script src=".public/js/script.js"></script>
+        <script src="public/js/script.js"></script>
     </body>
 </html>
 
