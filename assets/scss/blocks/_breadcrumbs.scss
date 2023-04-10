@@ -1,91 +1,91 @@
-.breadcrumbs {
-    &__list {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-    }
+// .breadcrumbs {
+//     &__list {
+//         display: flex;
+//         align-items: center;
+//         flex-wrap: wrap;
+//     }
 
-    &__item {
-        position: relative;
+//     &__item {
+//         position: relative;
 
-        display: flex;
-        align-items: center;
+//         display: flex;
+//         align-items: center;
 
-        padding: 0 rem(23px);
+//         padding: 0 rem(23px);
 
-        &:first-child {
-            padding-left: 0;
-        }
+//         &:first-child {
+//             padding-left: 0;
+//         }
 
-        &:last-child {
-            padding-right: 0;
-        }
-    }
+//         &:last-child {
+//             padding-right: 0;
+//         }
+//     }
 
-    &__item--active & { // активная хлебная крошка (последняя)
-        &__link {
-            color: $slate-gray;
+//     &__item--active & { // активная хлебная крошка (последняя)
+//         &__link {
+//             color: $slate-gray;
 
-            &::after {
-                display: none;
-            }
+//             &::after {
+//                 display: none;
+//             }
 
-            &:hover {
-                text-decoration: none;
-            }
-        }
-    }
+//             &:hover {
+//                 text-decoration: none;
+//             }
+//         }
+//     }
 
-    &__item:first-child & { // первая хлебная крошка
-        &__link {
-            &::before {
-                display: none;
-            }
-        }
-    }
+//     &__item:first-child & { // первая хлебная крошка
+//         &__link {
+//             &::before {
+//                 display: none;
+//             }
+//         }
+//     }
 
-    &__link {
-        font-size: $font-size-tiny;
-        line-height: rem(28px);
+//     &__link {
+//         font-size: $font-size-tiny;
+//         line-height: rem(28px);
 
-        display: block;
+//         display: block;
 
-        text-decoration: none;
-        color: $heather;
+//         text-decoration: none;
+//         color: $heather;
 
-        @media #{$screen-tablet} {
-            font-size: rem($font-size-xxSmall);
-            line-height: rem(32px);
-        }
+//         @media #{$screen-tablet} {
+//             font-size: rem($font-size-xxSmall);
+//             line-height: rem(32px);
+//         }
 
-        &:hover {
-            transition: $transition-duration $transition-function;
+//         &:hover {
+//             transition: $transition-duration $transition-function;
 
-            text-decoration: underline;
-            color: $slate-gray;
-        }
+//             text-decoration: underline;
+//             color: $slate-gray;
+//         }
 
-        &::before,
-        &::after {
-            position: absolute;
-            top: 50%;
+//         &::before,
+//         &::after {
+//             position: absolute;
+//             top: 50%;
 
-            width: rem(6px);
-            height: rem(10px);
+//             width: rem(6px);
+//             height: rem(10px);
 
-            content: "";
-            transform: translateY(-50%);
+//             content: "";
+//             transform: translateY(-50%);
 
-            background-image: url(/public/images/icons/arrow.svg);
-            background-repeat: no-repeat;
-        }
+//             background-image: url(/public/images/icons/arrow.svg);
+//             background-repeat: no-repeat;
+//         }
 
-        &::before {
-            left: 0;
-        }
+//         &::before {
+//             left: 0;
+//         }
 
-        &::after {
-            right: rem(-6px);
-        }
-    }
-}
+//         &::after {
+//             right: rem(-6px);
+//         }
+//     }
+// }

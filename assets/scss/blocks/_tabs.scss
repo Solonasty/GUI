@@ -1,80 +1,80 @@
-.tabs {
-    transition: $transition-duration $transition-function;
+// .tabs {
+//     transition: $transition-duration $transition-function;
 
-    &--blue & {
-        &__item {
-            color: $curious-blue;
-            border-radius: rem(4px);
-            background-color: $athensGray;
+//     &--blue & {
+//         &__item {
+//             color: $curious-blue;
+//             border-radius: rem(4px);
+//             background-color: $athensGray;
 
-            &--active {
-                color: $white;
-                background-color: $curious-blue;
-            }
-        }
-    }
+//             &--active {
+//                 color: $white;
+//                 background-color: $curious-blue;
+//             }
+//         }
+//     }
 
-    &--red & {
-        &__item {
-            position: relative;
+//     &--red & {
+//         &__item {
+//             position: relative;
 
-            margin-right: rem(30px);
-            padding-right: 0;
-            padding-left: 0;
+//             margin-right: rem(30px);
+//             padding-right: 0;
+//             padding-left: 0;
 
-            color: $heather;
+//             color: $heather;
             
-            &--active {
-                color: $bunker;
+//             &--active {
+//                 color: $bunker;
 
-                &::after {
-                content: "";
+//                 &::after {
+//                 content: "";
 
-                position: absolute;
-                bottom: -21px;
-                left: 50%;
-                transform: translateX((-50%));
+//                 position: absolute;
+//                 bottom: -21px;
+//                 left: 50%;
+//                 transform: translateX((-50%));
 
-                width: 100%;
-                height: 4px;
+//                 width: 100%;
+//                 height: 4px;
                 
-                padding: rem(10px) 0;
+//                 padding: rem(10px) 0;
 
-                border-top: rem(4px) solid #DC2C53;
-                border-radius: rem(4px);
-                }
-            }
-        }
+//                 border-top: rem(4px) solid #DC2C53;
+//                 border-radius: rem(4px);
+//                 }
+//             }
+//         }
 
-        &__list {
-            border-bottom: 1px solid $heather;
-        }
-    }
+//         &__list {
+//             border-bottom: 1px solid $heather;
+//         }
+//     }
 
-    &__list {
-        display: flex;
-        align-items: center;
-    }
+//     &__list {
+//         display: flex;
+//         align-items: center;
+//     }
 
-    &__item {
-        font-size: $font-size-xxSmall;
-        font-weight: $font-weight-medium;
-        line-height: rem(20px);
+//     &__item {
+//         font-size: $font-size-xxSmall;
+//         font-weight: $font-weight-medium;
+//         line-height: rem(20px);
 
-        padding: rem(10px) rem(20px);
+//         padding: rem(10px) rem(20px);
 
-        cursor: pointer;
+//         cursor: pointer;
 
-        & + & {
-            margin-left: rem(20px);
-        }
-    }
+//         & + & {
+//             margin-left: rem(20px);
+//         }
+//     }
 
-    &__block {
-        display: none;
+//     &__block {
+//         display: none;
 
-        &--active {
-            display: block;
-        }
-    }
-}
+//         &--active {
+//             display: block;
+//         }
+//     }
+// }
