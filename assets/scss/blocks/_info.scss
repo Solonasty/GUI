@@ -21,6 +21,11 @@
         font-weight: $font-weight-medium;
         line-height: rem(24px);
 
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        max-width: rem(206px);
         margin-bottom: rem(10px);
     }
 
