@@ -46,6 +46,58 @@
 
     <body class="page">
 
+        <header class="page__header header">
+            <div class="container">
+
+                <div class="header__row">
+
+                    <div class="header__col header__col--logo">
+                        <div class="logo header__logo">
+                            <a href="" class="logo__link">
+                                <img class="logo__pic" src="public/images/icons/logo.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="header__col header__col--search">
+                        <form action="header__form form">
+                            <div class="form__field">
+                                <div class="form__field-block form__field-block--input">
+                                    <div class="header__search-input input input--small input--buttoned input--search">
+                                        <input type="text" class="header__search-input-control input__control" name="text" id="text" placeholder="Найти...">
+                                        <button type="button" class="input__button input__button--search button button--iconed button--simple  button--gray button--search">
+                                            <span class="button__icon button__icon--medium button__icon--gray">
+                                                <svg class="icon">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-search"></use>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="header__col header__col--profile">
+                        <div class="header__profile profile profile--hidden">
+                            <a href="#" class="profile__link"></a>
+                            <div class="profile__block">
+                                <span class="profile__name">Константин</span>
+                                <div class="profile__avatar">
+                                    <img class="profile__avatar-pic" src="public/images/icons/profile-photo.svg" alt="">
+                                </div>
+                            </div>
+                            <span class="profile__icon">
+                                <svg class="profile__icon-pic icon">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-person"></use>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
         <div class="page__content content">
             <div class="container">
                 <main class="page__main main">
