@@ -1,0 +1,238 @@
+.card {
+    position: relative;
+
+    overflow: hidden;
+
+    height: rem(352px);
+
+    border-radius: 8px;
+    filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.03)) drop-shadow(0px 3px 10px rgba(164, 164, 164, 0.03));
+    background-color: $white;
+
+    &:hover {
+        cursor: pointer;
+
+        color: $curious-blue;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.03), 0 3px 10px rgba(164, 164, 164, 0.03);
+    }
+
+    &:hover p {
+        color: $curious-blue;
+    }
+
+    &__image {
+        position: relative;
+
+        overflow: hidden;
+
+        width: 100%;
+        margin-bottom: rem(10px);
+
+        &::before {
+            display: block;
+
+            $card-width: 335px;
+            $card-height: 159px;
+            padding-top: percentage($card-height / $card-width);
+
+            content: "";
+
+            @media #{$screen-tablet} {
+                $card-width: 354px;
+                $card-height: 159px;
+                padding-top: percentage($card-height / $card-width);
+            }
+
+            @media #{$screen-desktop} {
+                $card-width: 392px;
+                $card-height: 159px;
+                padding-top: percentage($card-height / $card-width);
+            }
+        }
+
+        &-pic {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            font-family: "object-fit: cover";
+        }
+
+    }
+
+    &__box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: hidden;
+
+        margin-right: rem(20px);
+        margin-left: rem(20px);
+    }
+
+    &__footer {
+        font-size: rem(12px);
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: $z-index-card-text;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        $footer-height: rem(64px);
+        height: $footer-height;
+        padding-top: 20px;
+        padding-right: rem(20px);
+        padding-left: rem(20px);
+
+        color: $slate-gray;
+        background-color: $white;
+
+        &--big {
+            color: $white;
+        }
+    }
+
+    &__heading {
+        font-size: $font-size-xxSmall;
+        font-weight: $font-weight-medium;
+        line-height: rem(24px);
+
+        z-index: $z-index-card-text;
+
+        height: 100%;
+        margin: 0;
+        margin-bottom: rem(10px);
+
+        @media #{$screen-tablet} {
+            font-size: $font-size-xSmall;
+        }
+    }
+
+    &__text {
+        overflow: hidden;
+        z-index: $z-index-card-text;
+
+        font-size: $font-size-tiny;
+        line-height: rem(21px);
+
+        height: auto;
+        max-height: rem(85px);
+        margin: 0;
+
+        opacity: 1;
+        color: $slate-gray;
+    }
+
+    &--big & {
+        &__image {
+            height: 100%;
+        }
+
+        &__content {
+            position: absolute;
+            top: 50%;
+
+            color: $white;
+        }
+
+        &__footer {
+            background-color: transparent;
+        }
+    }
+
+    &--big {
+        &::before {
+            position: absolute;
+            top: 0;
+            z-index: $z-index-card-box-shadow;
+
+            width: 100%;
+            height: 100%;
+
+            content: "";
+
+            opacity: 0.7;
+            background-color: #121920;
+        }
+
+        p {
+            color: $white;
+        }
+
+        &:hover {
+            &::before {
+                cursor: pointer;
+
+                transition: opacity .2s linear;
+
+                opacity: 0.9;
+            }
+
+            p {
+                color: $white;
+            }
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: $z-index-card-text;
+
+        width: rem(35px);
+        height: rem(35px);
+        padding: rem(6px);
+
+        background-color: $white;
+        border-radius: 0px 0px 0px 8px;
+
+        &--big {
+            background-color: transparent;
+        }
+
+        &--big & {
+            &-star {
+                fill: transparent;
+                stroke: $white;
+
+                &:hover {
+                    fill: #34aaddba;
+                }
+            }
+        }
+
+        &-star {
+            fill: white;
+            stroke: $curious-blue;
+
+            &:hover {
+                fill: #34aadd59;
+                transition: .2s linear;
+            }
+        }
+
+        &--active  {
+            fill: $curious-blue;
+        }
+    }
+}

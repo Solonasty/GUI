@@ -1,0 +1,34 @@
+.actions {
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+
+        margin-right: rem(12px);
+    }
+
+    &__item {
+        &--icon {
+            width: rem(13px);
+            height: rem(12px);
+            margin-right: rem(6px);
+
+            fill:#bbc4d6;
+
+            :hover {
+                fill: #768298;
+                transition: .1s linear;
+            }
+        }
+
+        &--number {
+            font-size: rem(12px);
+        }
+    }
+}
