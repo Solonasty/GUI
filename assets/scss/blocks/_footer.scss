@@ -3,7 +3,7 @@
     align-items: center;
 
     background-color: $white;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 rem(3px) rem(10px) rgba(0, 0, 0, 0.05);
 
     @media #{$screen-tablet} {
         height: rem($height-footer-desktop);
@@ -25,7 +25,7 @@
             width: 100%;
             padding: rem(20px) 0;
 
-            border-bottom: 1px solid $heather;
+            border-bottom: rem(1px) solid $heather;
 
             @media #{$screen-tablet} {
                 width: auto;
@@ -39,7 +39,7 @@
                 padding-right: rem(40px);
                 margin: rem(20px) 0;
 
-                border-right: 1px solid $heather;
+                border-right: rem(1px) solid $heather;
             }
         }
 
@@ -47,7 +47,7 @@
             width: 100%;
             padding: rem(20px) 0;
 
-            border-bottom: 1px solid $heather;
+            border-bottom: rem(1px) solid $heather;
 
             @media #{$screen-tablet} {
                 border-bottom: none;
