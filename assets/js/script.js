@@ -13,6 +13,7 @@ window.$ = $;
 // import myModule from './modules/my-module-function';
 
 import tabs from './modules/tabs';
+import spoiler from './modules/spoiler';
 
 const app = {
     ready() {
@@ -21,6 +22,7 @@ const app = {
 
         // myModule();
         tabs();
+        spoiler();
     },
 
     load() {

@@ -16,4 +16,5 @@ import './svg/arrow-left.svg';
 import './svg/cross.svg';
 import './svg/eye.svg';
 import './svg/i.svg';
+import './svg/toggle.svg';
 
