@@ -122,6 +122,23 @@
         }
     }
 
+    &--iconed#{&}--round {
+        width: rem(24px);
+        height: rem(24px);
+
+        border-radius: 50%;
+        background-color: $white;
+
+        .icon {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+            width: rem(10px);
+            height: rem(5px);
+        }
+    }
+
     &__text {
         font-weight: $font-weight-medium;
         display: block;
