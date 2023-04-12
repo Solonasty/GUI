@@ -68,10 +68,12 @@
         height: auto;
         color: $curious-blue;
         padding: 5px;
+        padding-left: 0;
         background: transparent;
 
         &__text {
             padding: 5px;
+            padding-left: 0;
         }
 
         &:hover {
