@@ -1,6 +1,4 @@
 .info {
-    position: relative;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,6 +14,12 @@
     border-radius: 5px;
     background-color: $white;
 
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
     &__heading {
         font-size: $font-size-xxSmall;
         font-weight: $font-weight-medium;
@@ -27,6 +31,23 @@
 
         max-width: rem(206px);
         margin-bottom: rem(10px);
+    }
+
+    &__icon {
+        width: rem(24px);
+        height: rem(24px);
+
+        &--info {
+            fill: $cerise-red;
+        }
+
+        &--question {
+            fill: $wildBlueYonder;
+        }
+        
+        &--i {
+            fill: $curious-blue;
+        }
     }
 
     &__text {
@@ -44,26 +65,5 @@
         align-items: flex-end;
         justify-content: right;
         margin-right: rem(-16px);
-    }
-
-    &__icon {
-        position: absolute;
-        top: rem(16px);
-        right: rem(16px);
-
-        width: rem(24px);
-        height: rem(24px);
-
-        &--info {
-            fill: $cerise-red;
-        }
-
-        &--question {
-            fill: $wildBlueYonder;
-        }
-        
-        &--i {
-            fill: $curious-blue;
-        }
     }
 }
