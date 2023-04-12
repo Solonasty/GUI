@@ -14,6 +14,7 @@ window.$ = $;
 
 import tabs from './modules/tabs';
 import spoiler from './modules/spoiler';
+import details from './modules/details';
 
 const app = {
     ready() {
@@ -23,6 +24,7 @@ const app = {
         // myModule();
         tabs();
         spoiler();
+        details();
     },
 
     load() {
