@@ -1,0 +1,99 @@
+.slider {
+    &__box {
+        position: relative;
+    }
+
+    .swiper {
+        &-slide {
+            width: auto;
+            opacity: .5;
+
+            &-active {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__buttons {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+
+        display: none;
+
+        width: 100%;
+        max-width: rem($width-container + 2 * $gap-container);
+        height: 0;
+        margin: 0;
+        margin: 0 auto 0;
+        padding-right: rem($gap-container);
+        padding-right: rem($gap-container);
+
+        @media #{$screen-tablet} {
+            display: block;
+        }
+
+        &-item {
+            width: auto;
+            height: auto;
+
+            &::after {
+                content: '';
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: rem(36px);
+        height: rem(36px);
+
+        background-color: $white;
+        border-color: $white;
+        box-shadow: 0 rem(4px) rem(12px) rgba(38, 94, 107, 0.25);
+
+        @media #{$screen-desktop} {
+            width: rem(48px);
+            height: rem(48px);
+        }
+
+        &:hover,
+        &:focus {
+            border-color: $goldenGrass;
+            background-color: $goldenGrass;
+        }
+
+        &--prev & {
+            &-icon {
+                transform: rotate(180deg);
+            }
+        }
+
+        &-icon {
+            width: rem(26px);
+            height: rem(26px);
+
+            color: $tiber;
+            opacity: .8;
+
+            @media #{$screen-desktop} {
+                width: rem(36px);
+                height: rem(36px);
+            }
+
+            &:hover,
+            &:focus {
+                color: $white;
+            }
+        }
+
+        
+
+        
+
+    }
+
+}

@@ -15,6 +15,8 @@ window.$ = $;
 import tabs from './modules/tabs';
 import spoiler from './modules/spoiler';
 import details from './modules/details';
+import swiper from './modules/swiper';
+import select from './modules/select';
 
 const app = {
     ready() {
@@ -25,6 +27,8 @@ const app = {
         tabs();
         spoiler();
         details();
+        // swiper();
+        select();
     },
 
     load() {
