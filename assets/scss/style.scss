@@ -4,6 +4,8 @@
 // Пример подключения плагинов
 // @import "~plugin-name.scss";
 @import "~normalize.css";
+@import "~swiper/css/swiper.min.css";
+@import '~select2/dist/css/select2.css';
 
 
 /**
@@ -56,3 +58,6 @@
 @import "blocks/info-block";
 @import "blocks/spoiler";
 @import "blocks/details";
+@import "blocks/select";
+@import "blocks/review";
+@import "blocks/slider";

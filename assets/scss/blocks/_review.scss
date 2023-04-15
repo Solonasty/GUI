@@ -1,0 +1,13 @@
+.review {
+    height: rem(300px);
+    padding: rem(30px);
+
+    background-color: $white;
+    box-shadow: 0 rem(4px) rem(12px) rgba(0, 0, 0, 0.1);
+
+    &--slide {
+        @media #{$screen-tablet} {
+            max-width: rem(580px);
+        }
+    }
+}
