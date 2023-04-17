@@ -37,6 +37,26 @@ function swipers() {
             };
         }
 
+        if (type =='pagination') {
+            paramsCustom = {
+                slidesPerView: 'auto',
+                centeredSlides: false,
+                clickable: true,
+                breakpoints: {
+                    375: {
+                        spaceBetween: 4,
+                    },
+                    768: {
+                        spaceBetween: 20,
+                    },
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+            };
+        }
+
         params = $.extend(params, paramsCustom);
 
         let instance = new Swiper(container, params);

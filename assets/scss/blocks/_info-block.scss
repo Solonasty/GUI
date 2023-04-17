@@ -1,15 +1,44 @@
 .info-block {
-    &__list {
-        display: flex;
-        align-items: center;
-        justify-content: left;
-    }
+    
 
-    &__item {
-        margin-right: rem(32px);
+    .slider {
+        &__box {
+            position: relative;
+        }
+    
+        .swiper {
+            &-container {
+                height: 180px;
 
-        &:last-child {
-            margin-right: 0;
+                .swiper-pagination-bullets {
+                    bottom: 0;
+                    z-index: 10000;
+                }
+            }
+
+            &-slide {
+                width: auto;
+                opacity: 1;
+    
+                &-active {
+                    opacity: 1;
+                }
+            }
         }
     }
+
+//     // &__list {
+//     //     // display: flex;
+//     //     align-items: center;
+//     //     justify-content: left;
+//     // }
+
+//     &__item {
+//         width: rem(286px);
+//         height: rem(150px);
+
+//         &:last-child {
+//             margin-right: 0;
+//         }
+//     }
 }
