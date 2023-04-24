@@ -115,10 +115,20 @@
             }
         }
 
+        &--valid {
+            font-size: rem(10px);
+
+            border-color: green;
+
+            &:focus {
+                border-color: green;
+            }
+        }
+
         &-error {
             line-height: $line-height-large;
 
-            color: transparent;
+            color: $cerise-red;
         }
     }
 }

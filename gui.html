@@ -64,7 +64,7 @@
                             <div class="form__field">
                                 <div class="form__field-block form__field-block--input">
                                     <div class="header__search-input input input--small input--buttoned input--search">
-                                        <input type="text" class="header__search-input-control input__control" name="text" id="text" placeholder="Найти...">
+                                        <input type="text" class="header__search-input-control input__control" name="text" id="text-header1" placeholder="Найти...">
                                         <button type="button" class="input__button input__button--search button button--iconed button--simple  button--gray button--search">
                                             <span class="button__icon button__icon--medium button__icon--gray">
                                                 <svg class="icon">
@@ -398,13 +398,13 @@
                                 <div class="form__col">
                                     <div class="form__field">
                                         <div class="form__field-block form__field-block--label">
-                                            <label for="text" class="form__label">
+                                            <label for="text-1" class="form__label">
                                                 <span class="form__field-text">Поле ввода</span>
                                             </label>
                                         </div>
                                         <div class="form__field-block form__field-block--input">
                                             <div class="input">
-                                                <input type="text" class="input__control" name="text" id="text" placeholder="Поле ввода с лейблом">
+                                                <input type="text" class="input__control" name="text" id="text-1" placeholder="Поле ввода с лейблом">
                                             </div>
                                         </div>
                                     </div>
@@ -449,13 +449,13 @@
                                 <div class="form__col">
                                     <div class="form__field">
                                         <div class="form__field-block form__field-block--label">
-                                            <label for="text" class="form__label">
+                                            <label for="text-2" class="form__label">
                                                 <span class="form__field-text">Поле ввода c иконкой</span>
                                             </label>
                                         </div>
                                         <div class="form__field-block form__field-block--input">
                                             <div class="input input--iconed">
-                                                <input type="text" class="input__control" name="text" id="text" placeholder="Поле ввода с лейблом">
+                                                <input type="text" class="input__control" name="text" id="text-2" placeholder="Поле ввода с лейблом">
                                             </div>
                                         </div>
                                     </div>
@@ -466,13 +466,13 @@
                                 <div class="form__col">
                                     <div class="form__field">
                                         <div class="form__field-block form__field-block--label">
-                                            <label for="text" class="form__label">
+                                            <label for="text-3" class="form__label">
                                                 <span class="form__field-text">Поле ввода c  ошибкой</span>
                                             </label>
                                         </div>
                                         <div class="form__field-block form__field-block--input">
                                             <div class="input input--iconed">
-                                                <input type="text" class="input__control input__control--error" name="text" id="text" placeholder="Поле ввода с лейблом">
+                                                <input type="text" class="input__control input__control--error" name="text" id="text-3" placeholder="Поле ввода с лейблом">
                                                 <span class="input__control--error">Некорректное заполнение поля</span>
                                             </div>
                                         </div>
@@ -484,7 +484,7 @@
                                 <div class="form__col">
                                     <div class="form__field">
                                         <div class="form__field-block form__field-block--label">
-                                            <label for="text" class="form__label">
+                                            <label for="textarea" class="form__label">
                                                 <span class="form__field-text">Многострочное поле ввода</span>
                                                 <div class="form__field-block form__field-block--input">
                                                     <label class="input input--textarea">
@@ -502,7 +502,7 @@
                                     <div class="form__field">
                                         <div class="form__field-block form__field-block--input">
                                             <div class="header__search-input input input--small input--buttoned input--search">
-                                                <input type="text" class="header__search-input-control input__control" name="text" id="text" placeholder="Найти">
+                                                <input type="text" class="header__search-input-control input__control" name="text" id="text-search" placeholder="Найти">
                                                 <button type="button" class="input__button input__button--search button button--iconed button--simple  button--gray button--search">
                                                     <span class="button__icon button__icon--medium">
                                                         <svg class="icon">
@@ -1062,7 +1062,7 @@
                     </div>
 
                     <!-- Инфо -->
-                    <div class="gui__block">
+                    <!-- <div class="gui__block">
                         <h3>Инфо</h3>
 
                         <div class="info-block">
@@ -1190,7 +1190,7 @@
 
                                         <div class="swiper-pagination"></div>
 
-                                        <!-- <div class="slider__buttons">
+                                        <div class="slider__buttons">
 
                                             <div class="slider__buttons-item swiper-button-prev" data-carousel-prev>
                                                 <button type="button" class="slider__button slider__button--prev button button--iconed button--tabIcon button--round">
@@ -1213,12 +1213,12 @@
                                                 </button>
 
                                             </div>
-                                        </div> -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Спойлер -->
                     <div class="gui__block">
@@ -1297,7 +1297,7 @@
                     </div>
 
                     <!-- Слайдер -->
-                    <div class="gui__block">
+                    <!-- <div class="gui__block">
 
                         <h3>Слайдер</h3>
 
@@ -1353,7 +1353,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Селект -->
                     <div class="gui__block">
@@ -1388,6 +1388,159 @@
                                 </div>
                             </div>
                         </form>
+                    </div>
+
+                    <!-- Валидация -->
+                    <h3>Валидация</h3>
+                    <!-- <div class="gui__block">
+                            <form class="form" action="" method="post" data-validation>
+
+                                <div class="form__row">
+                                    <div class="form__col">
+                                        <div class="form__field form__field--required">
+                                            <div class="form__field-block form__field-block--label">
+                                                <label for="text-name" class="form__label form__label--required">
+                                                    <span class="form__label-text">Имя</span>
+                                                </label>
+                                            </div>
+                                            <div class="form__field-block form__field-block--input">
+                                                <div class="input">
+                                                    <input type="text" class="input__control js-required" name="text" id="text-name" placeholder="Введите имя">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="form__row">
+                                    <div class="form__col">
+                                        <div class="form__field form__field--required">
+                                            <div class="form__field-block form__field-block--label">
+                                                <label for="text" class="form__label form__label--required">
+                                                    <span class="form__label-text">Фамилия</span>
+                                                </label>
+                                            </div>
+                                            <div class="form__field-block form__field-block--input">
+                                                <div class="input">
+                                                    <input type="text" class="input__control js-required" name="text" id="text-surname" placeholder="Введите фамилию">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="form__row">
+                                    <div class="form__col">
+                                        <div class="form__field form__field--required">
+                                            <div class="form__field-block form__field-block--label">
+                                                <label for="text" class="form__label form__label--required">
+                                                    <span class="form__field-text">Email-2</span>
+                                                </label>
+                                            </div>
+                                            <div class="form__field-block form__field-block--input">
+                                                <div class="input">
+                                                    <input type="text" class="input__control js-required js-email" name="text" id="text" placeholder="Введите email">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="form__row">
+                                    <div class="form__col">
+                                        <div class="form__field form__field--required">
+                                            <div class="form__field-block form__field-block--label">
+                                                <label for="text" class="form__label form__label--required">
+                                                    <span class="form__field-text">Email-2</span>
+                                                </label>
+                                            </div>
+                                            <div class="form__field-block form__field-block--input">
+                                                <div class="input">
+                                                    <input type="text" class="input__control js-required js-email" name="text" id="text" placeholder="Введите email">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="buttons">
+                                    <button type="button" class="button button--simple">
+                                        <span class="button__text">Отменить</span>
+                                    </button>
+    
+                                    <button type="submit" class="button button--medium button--color">
+                                        <span class="button__text">Сохранить изменения</span>
+                                    </button>
+                                </div>
+    
+    
+                            </form>
+
+                    </div> -->
+
+                    <!-- Модальное окно -->
+                    <div class="gui__block">
+
+                        <h3>Модальное окно</h3>
+
+                        <button type="button"
+                        class="button button--medium button--color"
+                        data-modal-type="modal"
+                        data-src="#techsupport">
+                            Техническая поддержка
+                        </button>
+
+                        <article id="techsupport" class="modal modal--small modal--centered" style="display: none;">
+                            <div class="modal__content">
+                                <header class="modal__section modal__section--header">
+                                    <h4 class="modal__title">Техническая поддержка</h4>
+                                </header>
+
+                                <div class="modal__section modal__section--content">
+                                    <form class="form">
+
+                                        <div class="form__row">
+                                            <div class="form__col">
+                                                <div class="form__field form__field--required">
+                                                    <div class="form__field-block form__field-block--label">
+                                                        <label for="text-modal" class="form__label form__label--required">
+                                                            <span class="form__field-text">Имя</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__field-block form__field-block--input">
+                                                        <div class="input">
+                                                            <input type="text" class="input__control js-required" name="text" id="text-modal" placeholder="Введите имя">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        <div class="form__row">
+                                            <div class="form__col">
+                                                <div class="form__field form__field--required">
+                                                    <div class="form__field-block form__field-block--label">
+                                                        <label for="text-modal2" class="form__label form__label--required">
+                                                            <span class="form__field-text">Фамилия</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__field-block form__field-block--input">
+                                                        <div class="input">
+                                                            <input type="text" class="input__control js-required" name="text" id="text-modal2" placeholder="Введите номер телефона">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal__section-actions">
+                                            <button type="button" class="modal__button button button--medium button--color">Отправить</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </article>
+
                     </div>
                     
                 </main>

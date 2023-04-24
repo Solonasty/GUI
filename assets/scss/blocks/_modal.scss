@@ -1,0 +1,122 @@
+.modal {
+    border-radius: rem(24px);
+    box-shadow: 0 rem(12px) rem(24px) rgba(0, 0, 0, 0.16);
+
+    &--small {
+        width: rem(610px);
+    }
+
+    &--small & {
+        &__section {
+            @media #{$screen-tablet} {
+                padding-right: rem(120px);
+                padding-left: rem(120px);
+            }
+        }
+    }
+
+    &--centered & {
+        &__section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        height: auto !important;
+        max-width: 100%;
+
+        padding-top: rem(32px);
+        padding-bottom: rem(32px);
+
+        @media #{$screen-tablet} {
+            padding-top: rem(48px);
+            padding-bottom: rem(48px);
+        }
+    }
+
+    &__section {
+        padding-right: rem(16px);
+        padding-left: rem(16px);
+
+        &--header {
+            flex-shrink: 0;
+            padding-bottom: rem(24px);
+
+            @media #{$screen-tablet} {
+                padding-bottom: rem(20px);
+            }
+        }
+
+        &--content {
+            flex-grow: 1;
+        }
+
+        &-actions {
+            margin-top: rem(40px);
+        }
+    }
+
+    &__title {
+        font-size: rem($font-size-xxSmall);
+        font-weight: $font-weight-medium;
+        line-height: rem(28px);
+    }
+
+    &__button {
+        width: 100%;
+    }
+
+    .fancybox {
+        &-bg {
+            background: rgba(#3a3a43, .55);
+        }
+
+        &-close {
+            $button-offset: 12px;
+
+            position: absolute;
+            top: rem($button-offset);
+            right: rem($button-offset);
+
+            cursor: pointer;
+
+            @media #{$screen-tablet} {
+                $button-offset: 20px;
+
+                top: rem($button-offset);
+                right: rem($button-offset);
+            }
+
+            &-icon {
+                $icon-size: 24px;
+
+                width: rem($icon-size);
+                height: rem($icon-size);
+
+                color: $curious-blue;
+            }
+        }
+
+        &-content {
+            overflow: visible;
+
+            padding: 0;
+        }
+
+        &-slide {
+            $modal-overlay-offset: 16px;
+
+            padding-right: rem($modal-overlay-offset);
+            padding-left: rem($modal-overlay-offset);
+        }
+
+        &-navigation {
+            display: none;
+        }
+    }
+}

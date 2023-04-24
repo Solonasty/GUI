@@ -22,7 +22,7 @@ function swipers() {
 
             paramsCustom = {};
 
-        if (type =='infinity') {
+        if (type == 'infinity') {
             paramsCustom = {
                 slidesPerView: 'auto',
                 centeredSlides: true,
@@ -61,6 +61,6 @@ function swipers() {
 
         let instance = new Swiper(container, params);
     });
-}
+};
 
-export default swipers();
+export default swipers;

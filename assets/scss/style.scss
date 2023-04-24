@@ -6,6 +6,8 @@
 @import "~normalize.css";
 @import "~swiper/css/swiper.min.css";
 @import '~select2/dist/css/select2.css';
+@import '~@fancyapps/fancybox/dist/jquery.fancybox.css';
+
 
 
 /**
@@ -61,3 +63,4 @@
 @import "blocks/select";
 @import "blocks/review";
 @import "blocks/slider";
+@import "blocks/modal";

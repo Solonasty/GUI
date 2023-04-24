@@ -16,7 +16,10 @@ import tabs from './modules/tabs';
 import spoiler from './modules/spoiler';
 import details from './modules/details';
 import swiper from './modules/swiper';
+
 import select from './modules/select';
+import validate from './modules/validate';
+import modal from './modules/modal';
 
 const app = {
     ready() {
@@ -27,8 +30,10 @@ const app = {
         tabs();
         spoiler();
         details();
-        // swiper();
+        swiper();
         select();
+        validate();
+        modal();
     },
 
     load() {
